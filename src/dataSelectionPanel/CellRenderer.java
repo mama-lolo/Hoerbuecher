@@ -18,7 +18,7 @@ public class CellRenderer extends DefaultListCellRenderer{
     {
         // I know DefaultListCellRenderer always returns a JLabel
         // super setups up all the defaults
-        JLabel label = (JLabel)super.getListCellRendererComponent(list, ((File)value).getAbsolutePath().replace(rootPath, ""), index, isSelected, cellHasFocus);
+        JLabel label = (JLabel)super.getListCellRendererComponent(list, ((File)value).getAbsolutePath().replace(rootPath, "test"), index, isSelected, cellHasFocus);
 
         // "value" is whatever object you put into the list, you can use it however you want here
         return label;
